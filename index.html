@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Profile - SEFC</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo-container">
+            <img src="img/logo.jpg" alt="Logo" class="logo-img">
+            <span class="brand-name">My Website</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#profile">Our Profile</a></li>
+            <li><a href="#message">Message Us</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="hero-section">
+        <div class="hero-content">
+            <h1 id="welcome-title">Hi [Name], Welcome To Website</h1>
+            <p>Ini adalah website latihan pertama saya.</p>
+        </div>
+    </header>
+
+    <section id="profile" class="content-section">
+        <h2>Our Profile</h2>
+        <div class="profile-grid">
+            <div class="photo-banner">
+                <img src="https://via.placeholder.com/600x300" alt="Banner">
+            </div>
+            <div class="profile-info">
+                <h3>About the Company</h3>
+                <p>Kami adalah perusahaan yang berdedikasi untuk memberikan solusi teknologi terbaik bagi pelanggan kami.</p>
+                <h3>Vision & Mission</h3>
+                <p>Menjadi platform belajar software engineering terbaik dan menciptakan engineer yang handal.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="message" class="content-section">
+        <h2>Message Us</h2>
+        <div class="form-wrapper">
+            <form id="messageForm" class="contact-form">
+                <label>Nama</label>
+                <input type="text" id="inputName" placeholder="Nama Anda" required>
+                
+                <label>Tanggal Lahir</label>
+                <input type="date" id="inputBirth" required>
+                
+                <label>Jenis Kelamin</label>
+                <div class="gender-options">
+                    <input type="radio" name="gender" value="Laki-laki" checked> Laki-laki
+                    <input type="radio" name="gender" value="Perempuan"> Perempuan
+                </div>
+                
+                <label>Pesan</label>
+                <textarea id="inputMessage" rows="4" placeholder="Tulis pesan..." required></textarea>
+                
+                <button type="submit" id="submitBtn">Submit</button>
+            </form>
+
+            <div id="outputBox" class="output-box">
+                <p><strong>Current Time:</strong> <span id="timeResult"></span></p>
+                <hr>
+                <p><strong>Nama:</strong> <span id="nameResult"></span></p>
+                <p><strong>Tanggal Lahir:</strong> <span id="birthResult"></span></p>
+                <p><strong>Jenis Kelamin:</strong> <span id="genderResult"></span></p>
+                <p><strong>Pesan:</strong> <span id="messageResult"></span></p>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
